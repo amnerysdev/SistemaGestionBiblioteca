@@ -19,6 +19,11 @@ namespace SistemaGestionBiblioteca
             siguienteId = 1;
         }
 
+        public int CantidadLibros => cantidadLibros;
+        public int CapacidadMaxima => CAPACIDAD_MAXIMA;
+
+
+
         // ---------------------------------------------------------
         // 1. Agregar un libro
         // Complejidad: O(1) -- se inserta directamente en la
@@ -37,7 +42,7 @@ namespace SistemaGestionBiblioteca
 
             libros[cantidadLibros] = nuevoLibro;
             cantidadLibros++;
-            Console.WriteLine($"¡Libro agregado exitosamente! '{nuevoLibro.Titulo}' ha sido registrado con el ID {nuevoLibro.Id}.");
+         
             return true;
         }
 
